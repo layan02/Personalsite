@@ -1,0 +1,17 @@
+<html>
+<body>
+{% if display==true %}
+<ol>
+{% for name in list %}        
+<li>{{name}}</li>
+   
+{% endfor %}
+</ol>
+<p></p>
+{% else %}
+<IMG STYLE="position:absolute; TOP:100px; LEFT:475px; WIDTH:320px; HEIGHT:500px" SRC="../static/food.jpg"> 
+{% endif %}
+
+
+</body>
+</html>

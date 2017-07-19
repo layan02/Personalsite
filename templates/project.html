@@ -1,0 +1,74 @@
+{% extends "index.html"%}
+	{% block title %}
+		<title>
+			My Projects	
+		</title>
+	{%endblock%}
+	{%block body%}
+
+		<h5 style="color:rgb(153, 102, 255); font-size:2em; margin-left:10px; margin-right:10px; margin-top:100px">During my participation in Code for Palestine program, which is a program funded by Paltel Group Foundation, I managed to create alot of projects and games that i would like to share with you. If you have any questions or aomments on my code or the way i did a certain thing you can send me your thoughts in the contact me section. </h5>
+		</p>
+		<IMG STYLE="position:absolute; TOP:300px; LEFT:500px; WIDTH:300px; HEIGHT:100px" SRC="../static/wecodelogo.png"title:"We Code's Logo">
+		</img>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+		<script>
+		$(document).ready(function(){
+    	$("#img1").click(function(){
+        $("#layan2").show();
+		});
+    	$("#img2").click(function(){
+    	$("#layan3").show();
+		});
+
+    	$("#img3").click(function(){
+    	$("#la1yan4").show();
+	});
+   
+	});
+	</script>
+	<img class="l" id = "img1" SRC="../static/turtle.png" alt= My Turtle Projects STYLE=" float:left; padding-top:100px; LEFT:10px; WIDTH:80px; HEIGHT:100px"/>
+	<h5 style="color:rgb(153, 102, 255); font-size:1.5em; margin-left:90px; margin-right:90px; margin-top:200px; HEIGHT:100px">My Turtle designs</h5>		
+	<h2 id="layan2" class = "l" style="display:none;"> 
+		import turtle <br>
+		turtle.forward(100)<br>
+		turtle.right(90)<br>
+		turtle.forward(100)<br>
+		turtle.right(90)<br>
+		turtle.forward(100)<br>
+		turtle.right(90)<br>
+		turtle.forward(100)<br>
+		turtle.right(90)<br>
+		turtle.done()<br>
+	<img SRC="../static/square.png" alt= square done by code STYLE=" padding-top:50px; LEFT:10px; WIDTH:80px; HEIGHT:80px"/>
+	</h2>
+		</img>
+	    </a>
+	    <img class="l" id = "img2" SRC="../static/pythonlogo.png" alt= My Python Projects style="float:left; padding-top:-50px; LEFT:15px; WIDTH:50px; HEIGHT:50px" "/>
+		<h5 style="color:rgb(153, 102, 255); font-size:1.5em; margin-left:90px; margin-right:90px; margin-top:55px">My Python designs</h5>		
+		<h2 id="layan3" class = "l" style="display:none;"> 
+		The first game I ever created was the famous snake game and I used the following code to move the snake using the keyboard bottons</br>
+		if pygame.key.get_pressed()[pygame.K_DOWN]:  </br>
+		x_change = 0</br>
+		y_change = speed<br>      
+		if pygame.key.get_pressed()[pygame.K_UP]:</br>            
+		x_change = 0</br>
+		y_change = speed*-1</br>          
+		if pygame.key.get_pressed()[pygame.K_LEFT]:</br>            
+		x_change = speed*-1</br>
+		y_change = 0 </br>          
+		if pygame.key.get_pressed()[pygame.K_RIGHT]: </br>           
+		x_change = speed*1</br>
+		y_change = 0 </br>
+
+		<img SRC="snake.png" alt= square done by code STYLE=" padding-top:50px; LEFT:10px; WIDTH:80px; HEIGHT:80px"/> 
+		</h2>
+
+		</img>
+	    </a>
+		</script>
+	<img class="l" id = "img3" SRC="../static/htmlcsslogo.png" alt= My HTML and CSS Projects STYLE="float:left; padding-top:50px; LEFT:30px; WIDTH:70px; HEIGHT:50px"/>
+	<h5 style="color:rgb(153, 102, 255); font-size:1.5em; margin-left:100px; margin-right:90px; margin-top:100px;">My HTML and CSS designs</h5>		
+	<h2 id="layan4" class = "l" style="display:none;"> 
+	This website is my first project on Html Css and Java Script if you want to chick the code out you can click a right clish and press inspect element to see the whole code.
+	</h2>
+	{% endblock %}
